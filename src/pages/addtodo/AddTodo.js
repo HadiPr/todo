@@ -8,6 +8,7 @@ export default function AddTodo() {
      const addTodo = e => {
           e.preventDefault()
           _addTodo(state)
+          e.target.reset()
      }
      return (
           <form onSubmit={addTodo}>

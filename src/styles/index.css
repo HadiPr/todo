@@ -43,7 +43,26 @@ header nav a{
   box-shadow:  5px 5px 10px #b5b5b5,
   -5px -5px 10px #ffffff;
 }
-#submit-button:hover{
+#submit-button:hover,.card-button:hover{
   box-shadow:  5px 5px 13px #b8b8b8,
   -5px -5px 13px #ffffff;
+}
+.custome-active{
+  border: 1px solid #fff;
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
+
+}
+
+.card-button{
+  box-shadow:  5px 5px 10px #b5b5b5,
+  -5px -5px 10px #ffffff;
+  padding: 3px 8px!important
+}
+.card-container{
+  padding: 20px
+}
+.card-container:hover{
+  box-shadow:  5px 5px 11px #d3d3d3,
+             -5px -5px 11px #ededed;
 }
