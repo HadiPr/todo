@@ -27,24 +27,24 @@ export default class Todos extends Component {
      }
      render() {
           return (
-               <section style={{height:'75%'}}>
+               <section>
                     <ul className="nav nav-tabs mb-2">
                          <li className={`nav-item w-50 ${!this.state.showDone ? 'custome-active' : ''}`}
                               style={{ textAlign: 'center' }}
                               onClick={() => this.setState({ showDone: false })}>
 
-                              <a className="nav-link " aria-current="page" href="#">Remaining</a>
+                              <a style={{color:'#666'}} className="nav-link " aria-current="page" href="#">Remaining</a>
                          </li>
 
                          <li className={`nav-item w-50 ${this.state.showDone ? 'custome-active' : ''}`}
                               style={{ textAlign: 'center' }}
                               onClick={() => this.setState({ showDone: true })}>
 
-                              <a className="nav-link " href="#">Done</a>
+                              <a style={{color:'#666'}} className="nav-link " href="#">Done</a>
                          </li>
 
                     </ul>
-                    <div id='scrolled-div' style={{overflowY:'scroll',height:'88%'}}>
+                    <div id='scrolled-div' style={{overflowY:'scroll',height:'70%'}}>
                     {
                          this.state.todos && this.state.todos.filter(todo => todo.done === this.state.showDone).map(todo => (
                               <TodoCard todo={todo} api={{ deleteTodo: this.deleteTodo.bind(this), editTodo: this.editTodo.bind(this) }} />

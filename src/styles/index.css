@@ -3,35 +3,39 @@
   --bg: #e0e0e0;
 
 }
-
+*{
+  color:#666
+}
 body,html{
   padding:0;
   margin:0;
   height: 100%;
   background: var(--bg)!important;
   font-family: Cabin!important;
-}
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
 }
 #root{
   width: 500px;
-  max-width: 100vw;
-  max-width: 100vw;
-  height: 70vh;
-  margin:auto;
+  height: 600px;
+  margin: 50px auto;
   background: var(--bg);
   box-shadow:  26px 26px 51px #bebebe,
              -26px -26px 51px #ffffff;
   border-radius: 30px;
   padding: 20px;
+  display:flex;
+  flex-direction: column;
+
 }
 header nav a{
   margin:5px;
   text-decoration: none;
-  color:inherit!important  
+  color:inherit!important;
+  border-bottom: 1px solid transparent;
+  transition: all .5s
+}
+header nav .active{
+  border-bottom: 1px solid #666;
 }
 #submit-button{
   display: block;
@@ -65,6 +69,7 @@ header nav a{
 .card-container:hover{
   box-shadow:  5px 5px 11px #d3d3d3,
              -5px -5px 11px #ededed;
+  scrollbar-width: thin;
 }
 #scrolled-div::-webkit-scrollbar-track
 {
@@ -75,7 +80,7 @@ header nav a{
 
 #scrolled-div::-webkit-scrollbar
 {
-	width: 12px;
+	width: 4px;
 	background-color: #F5F5F5;
 }
 

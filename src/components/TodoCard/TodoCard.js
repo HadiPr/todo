@@ -12,8 +12,8 @@ export default function TodoCard(props) {
                     <h4 style={{ padding: '4px', margin: '0', marginRight: 'auto' }} >
                          {title}
                     </h4>
-                    <TrashFill color='red' style={iconStyle} onClick={() => api.deleteTodo(id)} />
-                    {!done ? <CheckCircleFill color='green' style={iconStyle} onClick={() => api.editTodo({ done: true, id })} /> : null}
+                    <TrashFill  style={iconStyle} onClick={() => api.deleteTodo(id)} />
+                    {!done ? <CheckCircleFill  style={iconStyle} onClick={() => api.editTodo({ done: true, id })} /> : null}
                     {done ? <XCircleFill style={iconStyle} onClick={() => api.editTodo({ done: false, id })} /> : null}
                </div>
                <p>{description}</p>
