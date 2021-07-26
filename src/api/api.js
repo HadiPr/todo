@@ -1,5 +1,5 @@
 export const _addTodo = todo => {
-     todo.id = Date.now()
+     todo.id = `${Date.now()}${Math.floor(Math.random()*1000)}`
      todo.done = false
      const prevTodos = JSON.parse(localStorage.getItem('todos')) || []
      const newTodos = [...prevTodos, todo]

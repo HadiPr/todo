@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { _addTodo } from "./api/api";
 
 function App() {
+  //add some sample todos to preview:
+  if(!localStorage.getItem('todos'))
+    for(let i=0; i<4; i++)
+      _addTodo({title:`item ${i+1}`,description:'Lorem ipsum is placeholder text commonly used in the graphic, print.'})
   return (
       <header style={{ display: 'flex', alignItems: 'center',flexWrap:'wrap', margin: '20px 10px' }}>
         <h1 style={{ marginRight: 'auto' }}>Todo App</h1>

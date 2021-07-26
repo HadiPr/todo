@@ -44,7 +44,7 @@ export default class Todos extends Component {
                          </li>
 
                     </ul>
-                    <div id='scrolled-div' style={{overflowY:'scroll',height:'70%'}}>
+                    <div id='scrolled-div' style={{overflowY:'scroll',height:'60%'}}>
                     {
                          this.state.todos && this.state.todos.filter(todo => todo.done === this.state.showDone).map(todo => (
                               <TodoCard todo={todo} api={{ deleteTodo: this.deleteTodo.bind(this), editTodo: this.editTodo.bind(this) }} />
