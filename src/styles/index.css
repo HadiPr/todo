@@ -67,8 +67,8 @@ header nav .active{
   padding: 20px
 }
 .card-container:hover{
-  box-shadow:  5px 5px 11px #d3d3d3,
-             -5px -5px 11px #ededed;
+  box-shadow:  3px 3px 8px #d3d3d3,
+             -3px -3px 3px #ededed;
   scrollbar-width: thin;
 }
 #scrolled-div::-webkit-scrollbar-track
