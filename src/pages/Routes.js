@@ -9,11 +9,11 @@ export default function Routes(props) {
                     {props.children}
                <Switch>
 
-                    <Redirect exact from='/' to='todos'/>
+                    <Redirect exact from='/' to='/todo/todos'/>
 
-                    <Route path='/todos' component={Todos}/>
+                    <Route path='/todo/todos' component={Todos}/>
                     
-                    <Route path='/add-todo' component={AddTodo}/>
+                    <Route path='/todo/add-todo' component={AddTodo}/>
 
                </Switch>
           </BrowserRouter>
